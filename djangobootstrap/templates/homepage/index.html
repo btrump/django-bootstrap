@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% block extended_head %}
+<!-- Custom styles for this template -->
+<link href="{{ STATIC_URL }}vendor/bootstrap-examples/assets/css/docs.css" rel="stylesheet">
+
+<script>
+  console.log("Custom scripts and stylesheets can be loaded in the 'extended_head' block.");
+</script>
+{% endblock %}
+{% block main_content %}
+    <div class="jumbotron">
+      <div class="container">
+        <span class="glyphicon glyphicon-ok"></span>
+        <h1>Examples for Bootstrap</h1>
+        <p>Gallery of useful examples to easily get started with and extend Bootstrap's layout, components, and more.</p>
+        <a href="https://github.com/twbs/bootstrap-examples/archive/master.zip" class="btn btn-outline btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 1.0.0']);">Download from GitHub</a>
+        <ul class="jumbotron-links">
+          <li>
+            <a href="http://github.com/twbs/bootstrap-examples" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);">GitHub project</a>
+          </li>
+          <li>
+            <a href="http://getbootstrap.com" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Bootstrap']);">Bootstrap</a>
+          </li>
+          <li>
+            <a href="http://expo.getbootstrap.com" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Expo']);">Bootstrap Expo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container gallery">
+
+      <div class="row">
+        <div class="col-lg-4">
+          <a class="thumbnail" href="{{ STATIC_URL }}vendor/bootstrap-examples/starter-template/index.html" target="_blank">
+            <img src="{{ STATIC_URL }}vendor/bootstrap-examples/screenshots/starter.png" alt="">
+          </a>
+          <h3>Starter template</h3>
+          <p>A barebones HTML page with Bootstrap's CSS and JavaScript included.</p>
+        </div>
+        <div class="col-lg-4">
+          <a class="thumbnail" href="{{ STATIC_URL }}vendor/bootstrap-examples/grid/index.html" target="_blank">
+            <img src="{{ STATIC_URL }}vendor/bootstrap-examples/screenshots/grid.png" alt="">
+          </a>
+          <h3>Basic grid layouts</h3>
+          <p>Simple grid layouts to familiarize you with using the Bootstrap grid system.</p>
+        </div>
+        <div class="col-lg-4">
+          <a class="thumbnail" href="{{ STATIC_URL }}vendor/bootstrap-examples/jumbotron/index.html" target="_blank">
+            <img src="{{ STATIC_URL }}vendor/bootstrap-examples/screenshots/marketing.png" alt="">
+          </a>
+          <h3>Basic marketing site</h3>
+          <p>Features a jumbotron for primary message and three supporting elements.</p>
+        </div>
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-4">
+          <a class="thumbnail" href="{{ STATIC_URL }}vendor/bootstrap-examples/jumbotron-narrow/index.html" target="_blank">
+            <img src="{{ STATIC_URL }}vendor/bootstrap-examples/screenshots/jumbotron-narrow.png" alt="">
+          </a>
+          <h3>Narrow marketing</h3>
+          <p>Slim, lightweight marketing template for small projects or teams.</p>
+        </div>
+        <div class="col-lg-4">
+          <a class="thumbnail" href="{{ STATIC_URL }}vendor/bootstrap-examples/justified-nav/index.html" target="_blank">
+            <img src="{{ STATIC_URL }}vendor/bootstrap-examples/screenshots/justified-nav.png" alt="">
+          </a>
+          <h3>Justified nav</h3>
+          <p>Marketing page with equal-width navigation links in a modified navbar.</p>
+        </div>
+        <div class="col-lg-4">
+          <a class="thumbnail" href="{{ STATIC_URL }}vendor/bootstrap-examples/signin/index.html" target="_blank">
+            <img src="{{ STATIC_URL }}vendor/bootstrap-examples/screenshots/signin.png" alt="">
+          </a>
+          <h3>Sign in</h3>
+          <p>Barebones sign in form with custom, larger form controls and a flexible layout.</p>
+        </div>
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-4">
+          <a class="thumbnail" href="{{ STATIC_URL }}vendor/bootstrap-examples/sticky-footer/index.html" target="_blank">
+            <img src="{{ STATIC_URL }}vendor/bootstrap-examples/screenshots/sticky-footer.png" alt="">
+          </a>
+          <h3>Sticky footer</h3>
+          <p>Pin a fixed-height footer to the bottom of the user's viewport.</p>
+        </div>
+        <div class="col-lg-4">
+          <a class="thumbnail" href="{{ STATIC_URL }}vendor/bootstrap-examples/sticky-footer-navbar/index.html" target="_blank">
+            <img src="{{ STATIC_URL }}vendor/bootstrap-examples/screenshots/sticky-footer-navbar.png" alt="">
+          </a>
+          <h3>Sticky footer w/ navbar</h3>
+          <p>Add a fixed navbar to the default sticky footer template.</p>
+        </div>
+        <div class="col-lg-4">
+          <a class="thumbnail" href="{{ STATIC_URL }}vendor/bootstrap-examples/carousel/index.html" target="_blank">
+            <img src="{{ STATIC_URL }}vendor/bootstrap-examples/screenshots/carousel.png" alt="">
+          </a>
+          <h3>Carousel jumbotron</h3>
+          <p>An interactive riff on the basic marketing site featuring a prominent carousel.</p>
+        </div>
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-4">
+          <a class="thumbnail" href="{{ STATIC_URL }}vendor/bootstrap-examples/navbar/index.html" target="_blank">
+            <img src="{{ STATIC_URL }}vendor/bootstrap-examples/screenshots/navbar.png" alt="">
+          </a>
+          <h3>Navbar</h3>
+          <p>Basic template for showcasing how the navbar works.</p>
+        </div>
+        <div class="col-lg-4">
+          <a class="thumbnail" href="{{ STATIC_URL }}vendor/bootstrap-examples/navbar-static-top/index.html" target="_blank">
+            <img src="{{ STATIC_URL }}vendor/bootstrap-examples/screenshots/navbar-static-top.png" alt="">
+          </a>
+          <h3>Static top navbar</h3>
+          <p>Basic template for showcasing the static navbar variation.</p>
+        </div>
+        <div class="col-lg-4">
+          <a class="thumbnail" href="{{ STATIC_URL }}vendor/bootstrap-examples/navbar-fixed-top/index.html" target="_blank">
+            <img src="{{ STATIC_URL }}vendor/bootstrap-examples/screenshots/navbar-fixed-top.png" alt="">
+          </a>
+          <h3>Fixed top navbar</h3>
+          <p>Basic template for showcasing the fixed navbar variation.</p>
+        </div>
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+{% endblock %}
